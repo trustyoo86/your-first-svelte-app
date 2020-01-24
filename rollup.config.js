@@ -3,7 +3,6 @@ import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import livereload from 'rollup-plugin-livereload';
 import typescript from 'rollup-plugin-typescript2';
-import commonjs from 'rollup-plugin-commonjs';
 import * as tsCompile from 'typescript';
 import { terser } from 'rollup-plugin-terser';
 
@@ -18,7 +17,6 @@ export default {
     file: 'public/build/bundle.js',
   },
   plugins: [
-    commonjs(),
     typescript({ typescript: tsCompile, clean: true }),
     svelte({
       // enable run-time checks when not in production
