@@ -13,7 +13,8 @@
     "node": true
   },
   "parserOptions": {
-    "project": "tsconfig.json",
+    "project": "./tsconfig.json",
+    "createDefaultProgram": true,
     "allowImportExportEverywhere": true,
     "sourceType": "module",
     "ecmaFeatures": {
@@ -57,7 +58,7 @@
         }
       }
     ],
-    "block-scoped-var": "warn",
+    "block-scoped-var": "off",
     "curly": "error",
     "eqeqeq": "warn",
     "quotes": ["error", "single"],

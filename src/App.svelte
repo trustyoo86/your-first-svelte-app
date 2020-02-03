@@ -1,5 +1,6 @@
 <script lang="typescript">
-	export let name;
+  export {};
+  const name: string = 'Svelte';
 </script>
 
 <main>

@@ -21,7 +21,7 @@ export default {
   input: join(server, 'index.ts'),
   output: {
     sourcemap: true,
-    format: 'umd',
+    format: 'cjs',
     name: 'server',
     file: join(dist, 'server.js'),
   },
@@ -29,6 +29,8 @@ export default {
     commonjs(),
     typescript({ typescript: tsCompile, clean: true }),
     nodeResolve({
+      preferBuiltins: false,
+      mainFields: ['module'],
       extensions: ['.ts'],
     }),
   ],

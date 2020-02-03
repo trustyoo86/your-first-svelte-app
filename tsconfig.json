@@ -6,16 +6,19 @@
     "module": "ESNext",
     "target": "es5",
     "lib": [
-      "es2017", "es6", "esnext", "dom"
+      "dom", "esnext"
     ],
     "allowJs": true,
     "sourceMap": true,
-    "baseUrl": ".",
+    "baseUrl": "./",
     "rootDir": ".",
     "outDir": "dist",
     "allowSyntheticDefaultImports": true
   },
   "compileOnSave": true,
+  "include": [
+    "./src/**/*"
+  ],
   "exclude": [
     "./node_modules/**/*"
   ]
