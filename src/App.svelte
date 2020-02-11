@@ -1,11 +1,13 @@
 <script lang="typescript">
   export {};
   const name: string = 'Svelte';
+	import Main from './components/Main.svelte';
 </script>
 
 <main>
 	<h1>Hello {name}!</h1>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<Main test={'test'} />
 </main>
 
 <style>

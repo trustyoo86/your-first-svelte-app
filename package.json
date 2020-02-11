@@ -4,7 +4,8 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "start": "sirv public"
+    "start": "sirv public",
+    "dev:server": "nodemon dist/server.js"
   },
   "devDependencies": {
     "@pyoner/svelte-ts-preprocess": "^1.2.1",
